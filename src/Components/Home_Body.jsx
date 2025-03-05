@@ -2,15 +2,22 @@ import React from "react"
 import { ArrowRight, Star, TruckIcon, RefreshCcw, Shield, ChevronRight } from "lucide-react"
 import image1 from "../images/image1.jpg"
 import hero4 from "../images/hero4.png"
+import womens from "../images/womens.jpg"
+import mens from "../images/mens.jpg"
+import accessoire from "../images/accessoire.jpg"
+import f6 from "../images/f6.jpg"
+import n4 from "../images/n4.jpg"
+import n5 from "../images/n5.jpg"
+import n7 from "../images/n7.jpg"
 
 const Body_Home = () => {
-  // Sample product data
+  
   const newArrivals = [
     {
       id: 1,
       name: "Oversized Cotton Shirt",
       price: 49.99,
-      image: "/placeholder.svg?height=400&width=300",
+      image: f6,
       category: "Women",
       rating: 4.5,
     },
@@ -18,7 +25,7 @@ const Body_Home = () => {
       id: 2,
       name: "Slim Fit Denim Jeans",
       price: 59.99,
-      image: "/placeholder.svg?height=400&width=300",
+      image: n4,
       category: "Men",
       rating: 4.8,
     },
@@ -26,7 +33,7 @@ const Body_Home = () => {
       id: 3,
       name: "Floral Summer Dress",
       price: 79.99,
-      image: "/placeholder.svg?height=400&width=300",
+      image: n5,
       category: "Women",
       rating: 4.7,
     },
@@ -34,32 +41,32 @@ const Body_Home = () => {
       id: 4,
       name: "Casual Linen Blazer",
       price: 89.99,
-      image: "/placeholder.svg?height=400&width=300",
+      image: n7,
       category: "Men",
       rating: 4.6,
     },
   ]
 
-  // Categories
+  
   const categories = [
     {
       name: "Women's Collection",
-      image: {hero4},
+      image: womens,
       link: "/women",
     },
     {
       name: "Men's Collection",
-      image: {hero4},
+      image: mens,
       link: "/men",
     },
     {
       name: "Accessories",
-      image: {hero4},
+      image: accessoire,
       link: "/accessories",
     },
   ]
 
-  // Render stars based on rating
+  
   const renderStars = (rating) => {
     const stars = []
     const fullStars = Math.floor(rating)
@@ -88,7 +95,7 @@ const Body_Home = () => {
 
   return (
     <main className="w-full">
-      {/* Hero Section */}
+      
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img
@@ -122,7 +129,7 @@ const Body_Home = () => {
         </div>
       </section>
 
-      {/* Categories Section */}
+      
       <section className="py-16 bg-gray-50">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center mb-12 text-center">
@@ -135,7 +142,7 @@ const Body_Home = () => {
             {categories.map((category, index) => (
               <div key={index} className="group relative overflow-hidden rounded-lg">
                 <img
-                  src= {hero4}
+                  src= {category.image}
                   alt={category.name}
                   className="h-[400px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -155,7 +162,7 @@ const Body_Home = () => {
         </div>
       </section>
 
-      {/* New Arrivals Section */}
+      
       <section className="py-16">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center mb-12 text-center">
@@ -169,7 +176,7 @@ const Body_Home = () => {
               <div key={product.id} className="group">
                 <div className="relative overflow-hidden rounded-lg mb-3">
                   <img
-                    src={product.image || "/placeholder.svg"}
+                    src={product.image }
                     alt={product.name}
                     className="h-[400px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -206,38 +213,8 @@ const Body_Home = () => {
         </div>
       </section>
 
-      {/* Special Offer Banner */}
-      <section className="py-16 bg-black text-white">
-        <div className="container px-4 md:px-6 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-medium text-black">
-                Limited Time Offer
-              </span>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Summer Sale Up to 50% Off</h2>
-              <p className="text-lg text-white/80">
-                Refresh your wardrobe with our summer collection. Limited time offer, shop now!
-              </p>
-              <a
-                href="/sale"
-                className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-black transition-colors hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
-              >
-                Shop the Sale
-              </a>
-            </div>
-            <div className="relative h-[300px] md:h-[400px] overflow-hidden rounded-lg">
-              <img
-                src="/placeholder.svg?height=800&width=600"
-                alt="Summer sale"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 bg-white">
+      
+      <section className="py-10 bg-white">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex flex-col items-center text-center">
