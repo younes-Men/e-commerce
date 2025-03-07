@@ -1,9 +1,5 @@
 import React from "react";
 import {
-  Facebook,
-  Instagram,
-  Twitter,
-  YoutubeIcon as YouTube,
   Mail,
   Phone,
   MapPin,
@@ -22,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white border-t border-gray-200">
-      {/* Newsletter */}
+      
       <div className="bg-gray-50 py-10 text-center">
         <h3 className="text-xl font-bold mb-2">Join Our Newsletter</h3>
         <p className="text-gray-600 mb-4">Special offers, giveaways, and deals.</p>
@@ -36,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main Footer Content */}
+      
       <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {links.map(({ title, items }) => (
           <div key={title}>
@@ -51,7 +47,7 @@ const Footer = () => {
           </div>
         ))}
 
-        {/* Contact Section */}
+        
         <div>
           <h4 className="font-bold text-lg mb-4">Contact Us</h4>
           <ul className="space-y-3">
@@ -80,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      
       <div className="bg-black text-white py-4">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <a href="/" className="text-xl font-bold tracking-tighter">ELEGANCE</a>

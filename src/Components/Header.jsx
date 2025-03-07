@@ -37,27 +37,27 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-      {/* Top bar with announcement */}
+      
       <div className="bg-black text-white py-2 text-center text-sm">
         <p>Free shipping on all orders over $50</p>
       </div>
 
-      {/* Main header */}
+      
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Mobile menu button */}
+          
           <button className="lg:hidden text-gray-700 focus:outline-none" onClick={toggleMenu} aria-label="Toggle menu">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Logo */}
+          
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold tracking-tighter">
               ELEGANCE
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
+          
           <nav className="hidden lg:flex items-center space-x-8">
             <NavLink to="/">Home</NavLink>
             <DropdownMenu
@@ -100,7 +100,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Search bar */}
+        
         {isSearchOpen && (
           <div className="mt-4 relative">
             <input
@@ -116,7 +116,7 @@ const Header = () => {
         )}
       </div>
 
-      {/* Mobile menu */}
+      
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-3">

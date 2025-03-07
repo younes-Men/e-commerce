@@ -13,11 +13,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (isLogin) {
-      // Handle login
+      
       console.log("Logging in with:", { email, password, rememberMe })
       alert(`Login attempt with email: ${email}`)
     } else {
-      // Handle registration
+      
       console.log("Registering with:", { email, password })
       alert(`Registration attempt with email: ${email}`)
     }
@@ -29,7 +29,7 @@ const Login = () => {
 
   const toggleAuthMode = () => {
     setIsLogin(!isLogin)
-    // Reset form when switching modes
+    
     setEmail("")
     setPassword("")
     setShowPassword(false)
