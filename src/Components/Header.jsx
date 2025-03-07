@@ -90,7 +90,7 @@ const Header = () => {
             <Link to="/wishlist" className="text-gray-700 hover:text-black hidden sm:block">
               <Heart size={20} />
             </Link>
-            <Link to="/account" className="text-gray-700 hover:text-black hidden sm:block">
+            <Link to="/Login" className="text-gray-700 hover:text-black hidden sm:block">
               <User size={20} />
             </Link>
             <Link to="/cart" className="text-gray-700 hover:text-black relative">
