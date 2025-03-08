@@ -10,9 +10,9 @@ import {
   Minus,
   ChevronRight,
 } from "lucide-react";
-import womenHeader from "../images/womenHeader.jpg";
+import Banner from "../images/Banner-Men.jpg"
 import products_women from "../images/products_women.jpg";
-import products_women5 from "../images/products_women5.jpg"
+import products_women5 from "../images/products_women5.jpg";
 
 
 const Women_Body = () => {
@@ -391,7 +391,7 @@ const Women_Body = () => {
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img
-          src={womenHeader || "/placeholder.svg"}
+          src={Banner || "/placeholder.svg"}
           alt="Fashion collection"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -399,7 +399,7 @@ const Women_Body = () => {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
-                Women's Collection
+                Men's Collection
               </h1>
               <p className="text-xl text-white/90 md:text-2xl">
                 Elegance and style for every occasion

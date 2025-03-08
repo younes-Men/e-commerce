@@ -63,19 +63,13 @@ const Header = () => {
             <DropdownMenu
               title="Women"
               items={[
-                { name: "Dresses", href: "/Women_product" },
-                { name: "Tops", href: "/women/tops" },
-                { name: "Bottoms", href: "/women/bottoms" },
-                { name: "Accessories", href: "/women/accessories" },
+                { name: "Collections", href: "/Women_product" },    
               ]}
             />
             <DropdownMenu
               title="Men"
               items={[
-                { name: "Shirts", href: "/men/shirts" },
-                { name: "Pants", href: "/men/pants" },
-                { name: "Outerwear", href: "/men/outerwear" },
-                { name: "Accessories", href: "/men/accessories" },
+                { name: "Collections", href: "/Men_product" },               
               ]}
             />
             <NavLink to="/new-arrivals">New Arrivals</NavLink>
