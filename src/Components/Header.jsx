@@ -121,10 +121,7 @@ const Header = () => {
                   Women <ChevronDown size={16} className="ml-1" />
                 </summary>
                 <div className="pl-4 mt-2 space-y-2">
-                  <Link to="/Women_product" className="block py-2 text-gray-600">Dresses</Link>
-                  <Link to="/women/tops" className="block py-2 text-gray-600">Tops</Link>
-                  <Link to="/women/bottoms" className="block py-2 text-gray-600">Bottoms</Link>
-                  <Link to="/women/accessories" className="block py-2 text-gray-600">Accessories</Link>
+                  <Link to="/Women_product" className="block py-2 text-gray-600">Collections</Link>                 
                 </div>
               </details>
               <details className="group">
@@ -132,10 +129,7 @@ const Header = () => {
                   Men <ChevronDown size={16} className="ml-1" />
                 </summary>
                 <div className="pl-4 mt-2 space-y-2">
-                  <Link to="/men/shirts" className="block py-2 text-gray-600">Shirts</Link>
-                  <Link to="/men/pants" className="block py-2 text-gray-600">Pants</Link>
-                  <Link to="/men/outerwear" className="block py-2 text-gray-600">Outerwear</Link>
-                  <Link to="/men/accessories" className="block py-2 text-gray-600">Accessories</Link>
+                  <Link to="/Men_product" className="block py-2 text-gray-600">Collections</Link>                 
                 </div>
               </details>
               <NavLink to="/new-arrivals">New Arrivals</NavLink>
