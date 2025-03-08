@@ -72,8 +72,16 @@ const Header = () => {
                 { name: "Collections", href: "/Men_product" },               
               ]}
             />
+            <DropdownMenu
+              title="Accessoire"
+              items={[
+                { name: "Men's collections", href: "/AccessoireMen_product" },
+                { name: "Women's collections", href: "/AccessoireWomen_product" },             
+              ]}
+            />
+
+
             <NavLink to="/new-arrivals">New Arrivals</NavLink>
-            <NavLink to="/sale">Sale</NavLink>
           </nav>
 
           {/* Icons */}
@@ -132,8 +140,21 @@ const Header = () => {
                   <Link to="/Men_product" className="block py-2 text-gray-600">Collections</Link>                 
                 </div>
               </details>
+
+              <details className="group">
+                <summary className="flex justify-between items-center text-gray-700 py-2 border-b border-gray-100 cursor-pointer">
+                  Accessoire <ChevronDown size={16} className="ml-1" />
+                </summary>
+                <div className="pl-4 mt-2 space-y-2">
+                  <Link to="/AccessoireMen_product" className="block py-2 text-gray-600">Men's collections</Link>
+                  <Link to="/AccessoireWomen_product" className="block py-2 text-gray-600">Women's collections</Link>
+                         
+                </div>
+              </details>
+
+
+
               <NavLink to="/new-arrivals">New Arrivals</NavLink>
-              <NavLink to="/sale">Sale</NavLink>
               <NavLink to="/wishlist">Wishlist</NavLink>
               <NavLink to="/Login">My Account</NavLink>
             </nav>

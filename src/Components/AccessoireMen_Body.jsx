@@ -10,11 +10,9 @@ import {
   Minus,
   ChevronRight,
 } from "lucide-react";
-import womenHeader from "../images/womenHeader.jpg";
+import BannerAccessoireMen from "../images/BannerAccessoireMen.jpg";
 import products_women from "../images/products_women.jpg";
-import products_women5 from "../images/products_women5.jpg";
-import product_women3 from "../images/products_women 3.jpg";
-import products_women4 from "../images/Products_women 4.jpg";
+import products_women5 from "../images/products_women5.jpg"
 
 
 const Women_Body = () => {
@@ -24,10 +22,52 @@ const Women_Body = () => {
   const [showCartNotification, setShowCartNotification] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [featuredProducts, setFeaturedProducts] = useState([
-    
-    
     {
       id: 1,
+      name: "Floral Summer Dress",
+      price: 79.99,
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/n4.jpg-G2QKAVCXGF85456czOXorQ4IBAX31j.jpeg",
+      category: "Dresses",
+      rating: 4.7,
+      isNew: true,
+      dateAdded: "2024-03-01",
+    },
+    {
+      id: 2,
+      name: "Casual Linen Blouse",
+      price: 49.99,
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/n5.jpg-ykK2HxnXbHnoWdMd2prXYmgsegmDyF.jpeg",
+      category: "Tops",
+      rating: 4.5,
+      isNew: true,
+      dateAdded: "2024-03-02",
+    },
+    {
+      id: 3,
+      name: "High-Waisted Jeans",
+      price: 69.99,
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/n7.jpg-YGcDyxnOSRjr0Ty9whiJoOHNtgDAdT.jpeg",
+      category: "Bottoms",
+      rating: 4.8,
+      isNew: false,
+      dateAdded: "2024-02-28",
+    },
+    {
+      id: 4,
+      name: "Oversized Cardigan",
+      price: 59.99,
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f6.jpg-zvEHIeHP5xp1MHxxsB30pAK4YCpsI8.jpeg",
+      category: "Tops",
+      rating: 4.6,
+      isNew: false,
+      dateAdded: "2024-02-25",
+    },
+    {
+      id: 5,
       name: "Floral Summer Dress",
       price: 79.99,
       image: products_women,
@@ -50,7 +90,8 @@ const Women_Body = () => {
       id: 7,
       name: "High-Waisted Jeans",
       price: 69.99,
-      image: product_women3,
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/n7.jpg-YGcDyxnOSRjr0Ty9whiJoOHNtgDAdT.jpeg",
       category: "Bottoms",
       rating: 4.8,
       isNew: false,
@@ -60,7 +101,8 @@ const Women_Body = () => {
       id: 8,
       name: "Oversized Cardigan",
       price: 59.99,
-      image: products_women4 ,  
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/f6.jpg-zvEHIeHP5xp1MHxxsB30pAK4YCpsI8.jpeg",
       category: "Tops",
       rating: 4.6,
       isNew: false,
@@ -349,7 +391,7 @@ const Women_Body = () => {
       <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img
-          src={womenHeader || "/placeholder.svg"}
+          src={BannerAccessoireMen || "/placeholder.svg"}
           alt="Fashion collection"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -357,7 +399,7 @@ const Women_Body = () => {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
-                Women's Collection
+                Men's accessoires
               </h1>
               <p className="text-xl text-white/90 md:text-2xl">
                 Elegance and style for every occasion

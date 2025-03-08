@@ -86,17 +86,17 @@ const Body_Home = () => {
     {
       name: "Women's Collection",
       image: womens,
-      link: "/Women_Body",
+      link: "/Women_product",
     },
     {
       name: "Men's Collection",
       image: mens,
-      link: "/men",
+      link: "/Men_product",
     },
     {
       name: "Accessories",
       image: accessoire,
-      link: "/accessories",
+      link: "/AccessoireMen_product",
     },
   ];
 
@@ -319,7 +319,7 @@ const Body_Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                 <a
-                  href="/women"
+                  href="/Women"
                   className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-black transition-colors hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
                 >
                   Shop Women
